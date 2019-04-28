@@ -231,7 +231,7 @@ def disable():
         return json.dumps({"s":False,"m":"Script is already Disabled","d":{},"o":None})
     sessions[ids].enabled = False
     save()
-    return json.dumps({"s":True,"m":"Enabled '"+sessions[ids].name+"'","d":{},"o":None})
+    return json.dumps({"s":True,"m":"Disabled '"+sessions[ids].name+"'","d":{},"o":None})
 
 @app.route("/start",methods=["POST"])
 def start():
