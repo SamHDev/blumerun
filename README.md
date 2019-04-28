@@ -9,6 +9,10 @@ chmod 777 install.sh
 ./install.sh
 rm install.sh
 ```
+or as one quick copy paste solution:
+```bash
+sudo apt-get install wget;wget https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh;chmod 777 install.sh;./install.sh;rm install.sh
+```
 ## Uninstall
 ```bash
 /usr/local/blumerun/uninstall.sh
