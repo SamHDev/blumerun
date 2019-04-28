@@ -23,19 +23,19 @@ wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun.service 
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/uninstall.sh  -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/update.sh  -P /usr/local/blumerun
 #DEBUG
-mv /usr/local/blumerun/bin/blumerun /usr/local/blumerun/bin/blumerun2
+#mv /usr/local/blumerun/bin/blumerun /usr/local/blumerun/bin/blumerun2
 #PERM FIX
 echo Fixing Permsions
 chmod 777 /usr/local/blumerun/uninstall.sh
 chmod 777 /usr/local/blumerun/update.sh
 chmod 777 /usr/local/blumerun/start-server.sh
-chmod 777 /usr/local/blumerun/bin/blumerun2
+chmod 777 /usr/local/blumerun/bin/blumerun
 #SERVICE CREATE
 echo Creating Service
-mv /usr/local/blumerun/blumerun.service /etc/systemd/system/blumerun2.service
+mv /usr/local/blumerun/blumerun.service /etc/systemd/system/blumerun.service
 systemctl daemon-reload
-systemctl enable blumerun2
-systemctl start blumerun2
+systemctl enable blumerun
+systemctl start blumerun
 #APTH
 echo Adding to Path
 echo 'export PATH="/usr/local/blumerun/bin:$PATH"\n' >> ~/.bashrc
