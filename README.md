@@ -57,3 +57,7 @@ Or to stop a script
 ```
 blumerun stop looptest
 ```
+And to restart the script
+```
+blumerun restart looptest
+```
