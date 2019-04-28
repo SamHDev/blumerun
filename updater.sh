@@ -14,6 +14,3 @@ wget -q https://raw.githubusercontent.com/SamHDev/blumerun/master/uninstall.sh -
 
 chmod 777 /usr/local/blumerun/uninstall.sh
 chmod 777 /usr/local/blumerun/update.sh
-
-systemctl restart blumerun2
-
