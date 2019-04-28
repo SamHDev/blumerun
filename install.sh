@@ -7,9 +7,9 @@ mkdir /usr/local/blumerun/bin
 mkdir /usr/local/blumerun/log
 #INSTALL DEPS
 echo Getting Dependancies
-sudo apt-get install wget
-sudo apt-get install python3
-sudo apt-get install python3-pip
+sudo apt-get install wget -y
+sudo apt-get install python3 -y
+sudo apt-get install python3-pip -y
 python3 -m pip install flask
 python3 -m pip install requests
 #INSTALL FILES
@@ -20,7 +20,7 @@ wget https://raw.githubusercontent.com/SamHDev/blumerun/master/client.py -P /usr
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/data.json -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun -P /usr/local/blumerun/bin
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun.service  -P /usr/local/blumerun
-wget https://raw.githubusercontent.com/SamHDev/blumerun/master/uninstall.sh  -P /usr/local/
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/uninstall.sh  -P /usr/local/blumerun
 #DEBUG
 mv /usr/local/blumerun/bin/blumerun /usr/local/blumerun/bin/blumerun2
 #PERM FIX
