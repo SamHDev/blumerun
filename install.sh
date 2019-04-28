@@ -19,11 +19,13 @@ wget https://raw.githubusercontent.com/SamHDev/blumerun/master/start-server.sh -
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/client.py -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/data.json -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun -P /usr/local/blumerun/bin
-wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun  -P /usr/local/blumerun.service
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun.service  -P /usr/local/blumerun
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/uninstall.sh  -P /usr/local/
 #DEBUG
 mv /usr/local/blumerun/bin/blumerun /usr/local/blumerun/bin/blumerun2
 #PERM FIX
 echo Fixing Permsions
+chmod 777 /usr/local/blumerun/uninstall.sh
 chmod 777 /usr/local/blumerun/start-server.sh
 chmod 777 /usr/local/blumerun/bin/blumerun2
 #SERVICE CREATE
