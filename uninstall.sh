@@ -13,4 +13,5 @@ sed -i 's#export PATH="/usr/local/blumerun/bin:$PATH"##g' ~/.bashrc
 . ~/.bashrc
 echo Done
 echo ----------------------------------------
-echo "\nBye Bye!\nYou Can Reinstall here:\n    https://github.com/SamHDev/blumerun/"
+echo "Bye Bye!"
+echo "You Can Reinstall here:    https://github.com/SamHDev/blumerun/"
