@@ -14,4 +14,6 @@ wget -q https://raw.githubusercontent.com/SamHDev/blumerun/master/updater.sh -P 
 chmod 777 /usr/local/blumerun/updater.sh
 /usr/local/blumerun/updater.sh
 rm /usr/local/blumerun/updater.sh
+
+systemctl restart blumerun
 echo "Updated to $DATAE"
