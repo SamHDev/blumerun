@@ -1,9 +1,9 @@
 echo BlumeRun UnInstaller
 echo ----------------------------------------
 echo "Removing Service"
-systemctl stop blumerun2
-systemctl disable blumerun2
-rm /etc/systemd/system/blumerun2.service
+systemctl stop blumerun
+systemctl disable blumerun
+rm /etc/systemd/system/blumerun.service
 systemctl daemon-reload
 systemctl reset-failed
 echo "Removing Files"
