@@ -10,7 +10,7 @@ if [ $(version $DATAC) -ge $(version $DATAE) ]; then
     exit 3
 fi
 
-sudo wget https://raw.githubusercontent.com/SamHDev/blumerun/master/updater.sh -P /usr/local/blumerun
+sudo wget -q --no-cache https://raw.githubusercontent.com/SamHDev/blumerun/master/updater.sh -P /usr/local/blumerun
 sudo chmod 777 /usr/local/blumerun/updater.sh
 sudo bash /usr/local/blumerun/updater.sh
 sudo rm /usr/local/blumerun/updater.sh
