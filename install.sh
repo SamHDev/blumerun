@@ -5,7 +5,13 @@ echo ----------------------------------------
 mkdir /usr/local/blumerun
 mkdir /usr/local/blumerun/bin
 mkdir /usr/local/blumerun/log
+#INSTALL DEPS
+echo Getting Dependancies
 sudo apt-get install wget
+sudo apt-get install python3
+sudo apt-get install python3-pip
+python3 -m pip install flask
+python3 -m pip install requests
 #INSTALL FILES
 echo Installing Files
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/server.py -P /usr/local/blumerun
