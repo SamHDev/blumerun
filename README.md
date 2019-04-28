@@ -46,6 +46,7 @@ Add Session Wizard:
 Successfuly Added Script Loop Demo (looptest)
 ```
 And done, its that simple, and it starts automagicly
+
 ### Start/Stop/Restart a script
 *(Replace `looptest` with the id you added your script with)*
 
@@ -61,3 +62,18 @@ And to restart the script
 ```
 blumerun restart looptest
 ```
+
+### View a script's output
+*(Replace `looptest` with the id you added your script with)*
+
+To Get a quick snapshot of your programs latest output you can run:
+```
+blumerun output looptest
+```
+This should print out the last 260 lines
+
+To see a constantly updating version, you can launch a console session by running:
+```
+blumerun console looptest
+```
+You can press CTRL+C to exit this.
