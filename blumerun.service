@@ -1,0 +1,11 @@
+[Unit]
+Description=BlumeRun Local Server
+[Service]
+WorkingDirectory=/usr/local/blumerun/
+ExecStart=/bin/bash /usr/local/blumerun/start-server.sh
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target
