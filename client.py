@@ -1,4 +1,4 @@
-version = open("/user/local/blumerun/version.txt").read()
+version = open("/usr/local/blumerun/version.txt").read()
 
 import sys
 import os
