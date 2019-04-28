@@ -47,7 +47,8 @@ Successfuly Added Script Loop Demo (looptest)
 ```
 And done, its that simple, and it starts automagicly
 ### Start/Stop/Restart a script
-(Replace `looptest` with the id you added your script with)
+*(Replace `looptest` with the id you added your script with)*
+
 To Start a stop script, simply run:
 ```
 blumerun start looptest
