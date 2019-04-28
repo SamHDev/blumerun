@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/SamHDev/blumerun/master/start-server.sh -
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/client.py -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/data.json -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun -P /usr/local/blumerun/bin
-wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun.service  -P /usr/local/blumerun.service
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun  -P /usr/local/blumerun.service
 #DEBUG
 mv /usr/local/blumerun/bin/blumerun /usr/local/blumerun/bin/blumerun2
 #PERM FIX
