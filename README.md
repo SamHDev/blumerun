@@ -13,7 +13,21 @@ or as one quick copy paste solution:
 ```bash
 sudo apt-get install wget;wget https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh;chmod 777 install.sh;./install.sh;rm install.sh
 ```
+
+## Update
+```bash
+blumerun update
+```
+or if there is an issue:
+```bash
+/usr/local/blumerun/update.sh --force
+```
+
 ## Uninstall
+```bash
+blumerun uninstall
+```
+or
 ```bash
 /usr/local/blumerun/uninstall.sh
 ```
