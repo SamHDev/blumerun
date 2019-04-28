@@ -331,7 +331,9 @@ if args[0] == "output":
     except requests.exceptions.ConnectionError:
         print("ERROR:Failed to Connect to Deamon")
     sys.exit(0)
-    
+if args[0] == "execute":
+    print("ERROR: I WANT TO NO OXYGEN")
+    sys.exit(0)
 if args[0] == "console":
     if (len(args) == 0):
         print("Usage: blumerun console <id>")
