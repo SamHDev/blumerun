@@ -58,7 +58,7 @@ if args[0] == "update":
         os.system("./update.sh")
         sys.exit(0)
 if args[0] == "uninstall":
-    if (input("Are you sure you want to reset? [Y/N] ").strip().lower() not in ["y","yes"]):
+    if (input("Are you sure you want to uninstall? [Y/N] ").strip().lower() not in ["y","yes"]):
         print("Cancelled")
         sys.exit(0)
     else:
