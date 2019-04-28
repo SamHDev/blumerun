@@ -1,0 +1,2 @@
+echo BlumeRun UnInstaller
+echo ----------------------------------------
