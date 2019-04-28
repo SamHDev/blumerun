@@ -21,11 +21,13 @@ wget https://raw.githubusercontent.com/SamHDev/blumerun/master/data.json -P /usr
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun -P /usr/local/blumerun/bin
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun.service  -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/uninstall.sh  -P /usr/local/blumerun
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/update.sh  -P /usr/local/blumerun
 #DEBUG
 mv /usr/local/blumerun/bin/blumerun /usr/local/blumerun/bin/blumerun2
 #PERM FIX
 echo Fixing Permsions
 chmod 777 /usr/local/blumerun/uninstall.sh
+chmod 777 /usr/local/blumerun/update.sh
 chmod 777 /usr/local/blumerun/start-server.sh
 chmod 777 /usr/local/blumerun/bin/blumerun2
 #SERVICE CREATE
