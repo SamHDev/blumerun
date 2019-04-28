@@ -1,7 +1,7 @@
 #!/bin/sh
 
 rm /usr/local/blumerun/version.txt
-wget --no-cache https://raw.githubusercontent.com/SamHDev/blumerun/master/version.txt -P /usr/local/blumerun
+wget -q --no-cache https://raw.githubusercontent.com/SamHDev/blumerun/master/version.txt -P /usr/local/blumerun
 
 rm /usr/local/blumerun/server.py
 wget -q --no-cache https://raw.githubusercontent.com/SamHDev/blumerun/master/server.py -P /usr/local/blumerun
