@@ -10,9 +10,9 @@ sudo apt-get install wget
 echo Installing Files
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/server.py -P /usr/local/blumerun
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/start-server.sh -P /usr/local/blumerun
-wget https://github.com/SamHDev/blumerun/blob/master/client.py -P /usr/local/blumerun
-wget https://github.com/SamHDev/blumerun/blob/master/data.json -P /usr/local/blumerun
-wget https://github.com/SamHDev/blumerun/blob/master/blumerun -P /usr/local/blumerun/bin
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/client.py -P /usr/local/blumerun
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/data.json -P /usr/local/blumerun
+wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun -P /usr/local/blumerun/bin
 wget https://raw.githubusercontent.com/SamHDev/blumerun/master/blumerun.service  -P /usr/local/blumerun.service
 #DEBUG
 mv /usr/local/blumerun/bin/blumerun /usr/local/blumerun/bin/blumerun2
