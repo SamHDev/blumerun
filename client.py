@@ -55,14 +55,14 @@ if args[0] == "update":
         print("Cancelled")
         sys.exit(0)
     else:
-        os.system("./update.sh")
+        os.system("sudo bash /usr/local/blumerun/update.sh")
         sys.exit(0)
 if args[0] == "uninstall":
     if (input("Are you sure you want to uninstall? [Y/N] ").strip().lower() not in ["y","yes"]):
         print("Cancelled")
         sys.exit(0)
     else:
-        os.system("./uninstall.sh")
+        os.system("sudo bash /usr/local/blumerun/uninstall.sh")
         sys.exit(0)
     
 if args[0] == "list" or args[0] == "ls":
