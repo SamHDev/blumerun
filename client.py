@@ -1,4 +1,4 @@
-version = f("version.txt").read()
+version = open("version.txt").read()
 
 import sys
 import os
