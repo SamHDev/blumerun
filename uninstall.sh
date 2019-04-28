@@ -5,6 +5,7 @@ systemctl stop blumerun2
 systemctl disable blumerun2
 rm /etc/systemd/system/blumerun2.service
 systemctl daemon-reload
+systemctl reset-failed
 echo "Removing Files"
 rm -R /usr/local/blumerun
 echo "Removing Path"
