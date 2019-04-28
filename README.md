@@ -20,7 +20,7 @@ blumerun update
 ```
 or if there is an issue:
 ```bash
-/usr/local/blumerun/update.sh --force
+sudo bash /usr/local/blumerun/update.sh
 ```
 
 ## Uninstall
@@ -29,7 +29,7 @@ blumerun uninstall
 ```
 or
 ```bash
-/usr/local/blumerun/uninstall.sh
+sudo bash /usr/local/blumerun/uninstall.sh
 ```
 
 ## Usage
