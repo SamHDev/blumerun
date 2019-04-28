@@ -50,6 +50,20 @@ if args[0] == "reload":
     else:
         os.system("systemctl restart blumerun")
         sys.exit(0)
+if args[0] == "update":
+    if (input("Are you sure you want to update? [Y/N] ").strip().lower() not in ["y","yes"]):
+        print("Cancelled")
+        sys.exit(0)
+    else:
+        os.system("./update.sh")
+        sys.exit(0)
+if args[0] == "uninstall":
+    if (input("Are you sure you want to reset? [Y/N] ").strip().lower() not in ["y","yes"]):
+        print("Cancelled")
+        sys.exit(0)
+    else:
+        os.system("./uninstall.sh")
+        sys.exit(0)
     
 if args[0] == "list" or args[0] == "ls":
     try:
