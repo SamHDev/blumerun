@@ -1,4 +1,4 @@
-version = "BETA 0.1"
+version = f("version.txt").read()
 
 import sys
 import os
