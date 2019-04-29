@@ -104,12 +104,17 @@ You can press CTRL+C to exit this.
 ### Edit a script's details
 *(Replace `looptest` with the id you added your script with)*
 We can edit certian feature of a script using the `blumerun edit` command
-
+```bash
+blumerun edit <id> <key> <value>
+```
+```bash
+blumerun edit looptest restart false
+``
 | Key       | Example Value    | Desc                                                                                  |
 | --------- |------------------| --------------------------------------------------------------------------------------|
 | name      | Loop Test Demo   | The pretty print name of the script. Purely Asthetic                                  |
 | dir       | /root/loop/      | The Working Directory for the script. Must end in a `/`                               |
 | script    | start-loop.sh    | The file to execute on script start. Must have permissions to run `chmod 777 <file>`  |
-| onstart   | `true` / `false` |    $1                                                                                 |
-| restart   | `true` / `false` |    $1                                                                                 |
+| onstart   | `true` / `false` | Enable or Disable script start on startup or on server restart                        |
+| restart   | `true` / `false` | Enable or Disable script start on script crash or close                               |
 
