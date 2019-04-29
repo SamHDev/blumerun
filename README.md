@@ -109,7 +109,7 @@ blumerun edit <id> <key> <value>
 ```
 ```bash
 blumerun edit looptest restart false
-``
+```
 | Key       | Example Value    | Desc                                                                                  |
 | --------- |------------------| --------------------------------------------------------------------------------------|
 | name      | Loop Test Demo   | The pretty print name of the script. Purely Asthetic                                  |
