@@ -105,11 +105,11 @@ You can press CTRL+C to exit this.
 *(Replace `looptest` with the id you added your script with)*
 We can edit certian feature of a script using the `blumerun edit` command
 
-| Key       | Example Value    | Desc                   |
-| --------- |------------------| -----------------------|
-| name      | Loop Test Demo   | $1600                  |
-| dir       | /root/loop/      |   $12                  |
-| script    | start-loop.sh    |    $1                  |
-| onstart   | `true` / `false` |    $1                  |
-| restart   | `true` / `false` |    $1                  |
+| Key       | Example Value    | Desc                                                                                  |
+| --------- |------------------| --------------------------------------------------------------------------------------|
+| name      | Loop Test Demo   | The pretty print name of the script. Purely Asthetic                                  |
+| dir       | /root/loop/      | The Working Directory for the script. Must end in a `/`                               |
+| script    | start-loop.sh    | The file to execute on script start. Must have permissions to run `chmod 777 <file>`  |
+| onstart   | `true` / `false` |    $1                                                                                 |
+| restart   | `true` / `false` |    $1                                                                                 |
 
