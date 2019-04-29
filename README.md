@@ -1,7 +1,12 @@
 # blumerun
 A Custom Script Executor &amp; Service Runner for Ubuntu
 
-## Install
+## Features
+ * Easy Install
+
+## Manage an Install
+
+### Install
 ```bash
 sudo apt-get install wget
 sudo wget https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh
@@ -14,7 +19,7 @@ or as one quick copy paste solution:
 sudo apt-get install wget;sudo wget https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh;sudo chmod 777 install.sh;sudo bash install.sh;sudo rm install.sh
 ```
 
-## Update
+### Update
 ```bash
 blumerun update
 ```
@@ -23,7 +28,7 @@ or if there is an issue:
 sudo bash /usr/local/blumerun/update.sh
 ```
 
-## Uninstall
+### Uninstall
 ```bash
 blumerun uninstall
 ```
@@ -119,6 +124,7 @@ blumerun edit looptest name Loop Test Demo
 ```
 
 Here are the values you can change:
+
 | Key       | Example Value    | Desc                                                                                  |
 | --------- |------------------| --------------------------------------------------------------------------------------|
 | name      | Loop Test Demo   | The pretty print name of the script. Purely Asthetic                                  |
