@@ -36,7 +36,7 @@ sudo bash /usr/local/blumerun/uninstall.sh
 ### Add a Script
 All scripts are run from a bash file, regardless if they are python or java.
 You first need to create a .sh file to run your code. 
-In this example I'm running a simple python script called `looptest.py`
+In this example I'm running a simple python script called `looptest.py` here is a quick demo script:
 ```py
 import time
 count = 0
@@ -45,8 +45,9 @@ while True:
     time.sleep(1)
     count = count + 1
 ```
-Then I create a .sh file to run this named `looptest.sh`
+Then I create a .sh file to run this named `looptest.sh` inside is the command to execute the python script:
 ```bash
+#!/bin/sh
 python3 -u loop.py
 ```
 The `-u` argument for the python flushes all output from `print` commands allowing blumerun the see the output
@@ -56,7 +57,6 @@ blumerun add looptest
 ```
 This should enter us into a wizard. Fill in the prompts like this example
 ```
-root@server:~/blumerun add looptest
 Add Session Wizard:
         Description Name[Looptest]: Loop Demo
         Working Directory[/root/]:
@@ -80,6 +80,10 @@ And to restart the script
 ```
 blumerun restart looptest
 ```
+We can see if the script is running by using
+```
+blumerun status looptest
+```
 
 ### View a script's output
 *(Replace `looptest` with the id you added your script with)*
@@ -95,3 +99,17 @@ To see a constantly updating version, you can launch a console session by runnin
 blumerun console looptest
 ```
 You can press CTRL+C to exit this.
+
+
+### View a script's output
+*(Replace `looptest` with the id you added your script with)*
+We can edit certian feature of a script using the `blumerun edit` command
+
+| Key       | Example Value   | Desc                   |
+| --------- |-----------------| -----------------------|
+| name      | right-aligned   | $1600                  |
+| dir       | centered        |   $12                  |
+| script    | are neat        |    $1                  |
+| onstart   | are neat        |    $1                  |
+| restart   | are neat        |    $1                  |
+
