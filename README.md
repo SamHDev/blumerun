@@ -9,15 +9,15 @@ A Custom Script Executor &amp; Service Runner for Ubuntu
 
 ### Install
 ```bash
-sudo apt-get install wget
-sudo wget https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh
+sudo apt-get install wget -y -qq
+sudo -q --no-cache wget https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh 
 sudo chmod 777 install.sh
 sudo bash install.sh
 sudo rm install.sh
 ```
 or as one quick copy paste solution:
 ```bash
-sudo apt-get install wget;sudo wget https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh;sudo chmod 777 install.sh;sudo bash install.sh;sudo rm install.sh
+sudo apt-get install wget -y -qq;sudo wget -q --no-cache https://raw.githubusercontent.com/SamHDev/blumerun/master/install.sh;sudo chmod 777 install.sh;sudo bash install.sh;sudo rm install.sh
 ```
 
 ### Update
