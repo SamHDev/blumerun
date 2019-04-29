@@ -101,15 +101,15 @@ blumerun console looptest
 You can press CTRL+C to exit this.
 
 
-### View a script's output
+### Edit a script's details
 *(Replace `looptest` with the id you added your script with)*
 We can edit certian feature of a script using the `blumerun edit` command
 
-| Key       | Example Value   | Desc                   |
-| --------- |-----------------| -----------------------|
-| name      | right-aligned   | $1600                  |
-| dir       | centered        |   $12                  |
-| script    | are neat        |    $1                  |
-| onstart   | are neat        |    $1                  |
-| restart   | are neat        |    $1                  |
+| Key       | Example Value    | Desc                   |
+| --------- |------------------| -----------------------|
+| name      | Loop Test Demo   | $1600                  |
+| dir       | /root/loop/      |   $12                  |
+| script    | start-loop.sh    |    $1                  |
+| onstart   | `true` / `false` |    $1                  |
+| restart   | `true` / `false` |    $1                  |
 
