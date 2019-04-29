@@ -57,7 +57,7 @@ Then I create a .sh file to run this named `looptest.sh` inside is the command t
 python3 -u loop.py
 ```
 The `-u` argument for the python flushes all output from `print` commands allowing blumerun the see the output
-All we need to do next is add the script. We can run
+Next we add the script. We can run
 ```bash
 blumerun add looptest
 ```
