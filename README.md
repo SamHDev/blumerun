@@ -2,7 +2,8 @@
 A Custom Script Executor &amp; Service Runner for Ubuntu
 
 ## Features
- * Easy Install
+ * Setup a script in a **single** command
+ * **Easy Install** with a quick copy paste solution
 
 ## Manage an Install
 
@@ -61,10 +62,10 @@ All we need to do next is add the script. We can run
 blumerun add looptest
 ```
 This should enter us into a wizard. Fill in the prompts like this example
-```
+```bash
 Add Session Wizard:
-        Description Name[Looptest]: Loop Demo
-        Working Directory[/root/]:
+        Description Name[Looptest]: Loop Demo #Pretty Print Name
+        Working Directory[/root/]: 
         Script File[looptest.sh]:
 Successfuly Added Script Loop Demo (looptest)
 ```
