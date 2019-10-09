@@ -56,6 +56,8 @@ systemctl start blumerun
 echo Adding to Path
 echo 'export PATH="/usr/local/blumerun/bin:$PATH"\n' >> ~/.bashrc
 echo "  -bashrc Path"
+echo '\nPATH=$PATH:/usr/local/blumerun/bin\n' >> ~/etc/profile
+echo "  -global Path"
 export PATH="/usr/local/blumerun/bin:$PATH"
 echo "  -console Path"
 #END MSG
